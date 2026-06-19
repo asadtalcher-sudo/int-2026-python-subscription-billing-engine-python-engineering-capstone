@@ -56,9 +56,355 @@ class BillingCycle:
 
     # --------------------------------------------------------
     def run(self, as_of: date) -> BillingResult:
-        """Bill all subscriptions whose current period ends on or before `as_of`."""
-        # TODO Day 3
-        raise NotImplementedError("Day 3: implement BillingCycle.run")
+        [{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"severity": 8,
+	"message": "\"return\" can be used only within a function",
+	"source": "Pylance",
+	"startLineNumber": 161,
+	"startColumn": 5,
+	"endLineNumber": 161,
+	"endColumn": 11,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 70,
+	"startColumn": 16,
+	"endLineNumber": 70,
+	"endColumn": 20,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"as_of\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 74,
+	"startColumn": 34,
+	"endLineNumber": 74,
+	"endColumn": 39,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 76,
+	"startColumn": 13,
+	"endLineNumber": 76,
+	"endColumn": 17,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 79,
+	"startColumn": 25,
+	"endLineNumber": 79,
+	"endColumn": 29,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"as_of\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 79,
+	"startColumn": 68,
+	"endLineNumber": 79,
+	"endColumn": 73,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 82,
+	"startColumn": 20,
+	"endLineNumber": 82,
+	"endColumn": 24,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 83,
+	"startColumn": 16,
+	"endLineNumber": 83,
+	"endColumn": 20,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 88,
+	"startColumn": 20,
+	"endLineNumber": 88,
+	"endColumn": 24,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 89,
+	"startColumn": 20,
+	"endLineNumber": 89,
+	"endColumn": 24,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 90,
+	"startColumn": 33,
+	"endLineNumber": 90,
+	"endColumn": 37,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 91,
+	"startColumn": 32,
+	"endLineNumber": 91,
+	"endColumn": 36,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 122,
+	"startColumn": 29,
+	"endLineNumber": 122,
+	"endColumn": 33,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 125,
+	"startColumn": 17,
+	"endLineNumber": 125,
+	"endColumn": 21,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 135,
+	"startColumn": 13,
+	"endLineNumber": 135,
+	"endColumn": 17,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"self\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 155,
+	"startColumn": 13,
+	"endLineNumber": 155,
+	"endColumn": 17,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+},{
+	"resource": "/C:/Users/Nikhat/OneDrive/Documents/GitHub/subscription-billing-engine-asadtalcher-sudo/billing_engine_starter/billing_engine/billing/cycle.py",
+	"owner": "Pylance",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportUndefinedVariable.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "\"sqlite3\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 158,
+	"startColumn": 16,
+	"endLineNumber": 158,
+	"endColumn": 23,
+	"modelVersionId": 79,
+	"origin": "extHost1"
+}]
 
     # --------------------------------------------------------
     def upgrade_subscription(self, subscription_id: int, new_plan_id: int, switch_date: date) -> None:
