@@ -8,7 +8,9 @@ we use mocks so tests are deterministic and the demo never hits the network.
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
+from collections import deque
 from dataclasses import dataclass
+from random import Random
 from typing import Optional
 
 from billing_engine.models import Invoice
@@ -41,12 +43,12 @@ class ScriptedGateway(PaymentGateway):
     """
 
     def __init__(self, results: list[PaymentResult]) -> None:
-        # TODO Day 3
-        raise NotImplementedError("Day 3: implement ScriptedGateway.__init__")
+        self._results = deque(results)
 
     def charge(self, invoice: Invoice) -> PaymentResult:
-        # TODO Day 3
-        raise NotImplementedError("Day 3: implement ScriptedGateway.charge")
+        if not self._results:
+            raise IndexError("ScriptedGateway has no more configured results")
+        return self._results.popleft()
 
 
 # ----------------------------------------------------------------
@@ -56,9 +58,12 @@ class FakeRandomGateway(PaymentGateway):
     """Succeeds at a configurable rate; seeded for reproducibility."""
 
     def __init__(self, success_rate: float = 0.7, seed: Optional[int] = None) -> None:
-        # TODO Day 3
-        raise NotImplementedError("Day 3: implement FakeRandomGateway.__init__")
+        if not 0 <= success_rate <= 1:
+            raise ValueError("success_rate must be between 0 and 1")
+        self.success_rate = success_rate
+        self._rng = Random(seed)
 
     def charge(self, invoice: Invoice) -> PaymentResult:
-        # TODO Day 3
-        raise NotImplementedError("Day 3: implement FakeRandomGateway.charge")
+        if self._rng.random() < self.success_rate:
+            return PaymentResult(True)
+        return PaymentResult(False, "PAYMENT_DECLINED")

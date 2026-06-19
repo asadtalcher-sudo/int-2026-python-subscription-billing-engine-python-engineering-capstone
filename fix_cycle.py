@@ -1,3 +1,8 @@
+from pathlib import Path
+from textwrap import dedent
+
+path = Path('billing_engine_starter/billing_engine/billing/cycle.py')
+contents = dedent('''
 """
 BillingCycle — finds due subscriptions, generates invoices, posts ledger DEBITs,
 advances the subscription period. Must be IDEMPOTENT (safe to run twice).
@@ -296,3 +301,8 @@ class BillingCycle:
         )
 
         self.subscription_repo.update_plan(subscription_id, new_plan_id)
+''').strip() + '\n'
+
+path.write_text(contents, encoding='utf-8')
+print(f'wrote {path}')
+print(contents.splitlines()[:40])

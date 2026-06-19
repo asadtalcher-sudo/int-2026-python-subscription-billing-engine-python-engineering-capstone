@@ -601,7 +601,15 @@ class InvoiceRepository:
             )
 
     def set_pdf_path(self, invoice_id: int, path: str) -> None:
-        raise NotImplementedError("Day 4: implement InvoiceRepository.set_pdf_path")
+        with self.db.connect() as conn:
+            conn.execute(
+                """
+                UPDATE invoices
+                SET pdf_path = ?
+                WHERE id = ?
+                """,
+                (path, invoice_id),
+            )
 
 
 class InvoiceLineItemRepository:
@@ -759,13 +767,46 @@ class PaymentAttemptRepository:
         failure_reason: Optional[str],
         next_retry_at: Optional[datetime],
     ) -> int:
-        # TODO Day 3.
-        raise NotImplementedError("Day 3: implement PaymentAttemptRepository.add")
+        with self.db.connect() as conn:
+            cur = conn.execute(
+                """
+                INSERT INTO payment_attempts (
+                    invoice_id, attempt_no, status, failure_reason, next_retry_at
+                )
+                VALUES (?, ?, ?, ?, ?)
+                """,
+                (
+                    invoice_id,
+                    attempt_no,
+                    status,
+                    failure_reason,
+                    next_retry_at.isoformat() if next_retry_at else None,
+                ),
+            )
+            return int(cur.lastrowid)
 
     def list_for_invoice(self, invoice_id: int) -> list[dict]:
-        # TODO Day 3.
-        raise NotImplementedError("Day 3: implement PaymentAttemptRepository.list_for_invoice")
+        with self.db.connect() as conn:
+            rows = conn.execute(
+                """
+                SELECT id, invoice_id, attempt_no, status,
+                       failure_reason, attempted_at, next_retry_at
+                FROM payment_attempts
+                WHERE invoice_id = ?
+                ORDER BY attempt_no
+                """,
+                (invoice_id,),
+            ).fetchall()
+        return [dict(row) for row in rows]
 
     def count_for_invoice(self, invoice_id: int) -> int:
-        # TODO Day 3.
-        raise NotImplementedError("Day 3: implement PaymentAttemptRepository.count_for_invoice")
+        with self.db.connect() as conn:
+            row = conn.execute(
+                """
+                SELECT COUNT(*) AS count
+                FROM payment_attempts
+                WHERE invoice_id = ?
+                """,
+                (invoice_id,),
+            ).fetchone()
+        return int(row["count"])
